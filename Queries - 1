@@ -1,5 +1,0 @@
--- 1.Retrieve all customers who have placed an order in the last 30 days.
-SELECT DISTINCT customers.* 
-FROM customers 
-JOIN orders ON customers.id = orders.customer_id
-WHERE orders.order_date >= CURDATE() - INTERVAL 30 DAY;
