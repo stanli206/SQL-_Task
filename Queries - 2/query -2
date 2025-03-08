@@ -1,0 +1,6 @@
+
+-- 2. Get the total amount of all orders placed by each customer
+SELECT customers.name, SUM(orders.total_amount) AS total_spent
+FROM customers
+JOIN orders ON customers.id = orders.customer_id
+GROUP BY customers.id, customers.name;
