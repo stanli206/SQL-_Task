@@ -1,0 +1,7 @@
+-- 6. Get the names of customers who have ordered Product A
+select DISTINCT customers.name 
+from customers 
+join orders on customers.id = orders.customer_id
+join order_items on orders.id = order_items.order_id
+join products on order_items.product_id = products.id
+where products.name = 'Product A';
