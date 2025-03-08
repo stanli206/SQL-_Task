@@ -1,0 +1,2 @@
+-- 4. Add a new column 'discount' to the products table
+Alter table products ADD column discount decimal(5,2) default 0.00;
