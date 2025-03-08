@@ -1,0 +1,2 @@
+-- 8. Retrieve the orders with a total amount greater than 150.00
+select * from orders where total_amount > 150.00;
