@@ -1,0 +1,4 @@
+-- 7. Join the orders and customers tables to retrieve the customer's name and order date for each order
+select customers.name, orders.order_date 
+from orders
+join customers on orders.customer_id = customers.id;
