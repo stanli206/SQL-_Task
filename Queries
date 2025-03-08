@@ -6,3 +6,6 @@
     JOIN orders ON customers.id = orders.customer_id
     WHERE orders.order_date >= CURDATE() - INTERVAL 30 DAY;
 
+
+![Image](https://github.com/user-attachments/assets/16eed056-6b86-4296-8223-7fc323c3fe7d)
+
